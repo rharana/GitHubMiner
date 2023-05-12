@@ -1,7 +1,6 @@
 package aiss.gitminer.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.List;
 
 
 public class Project {
@@ -21,10 +20,6 @@ public class Project {
     private Issue[] issues;
 
     public Project() {
-    }
-
-    public String getId() {
-        return id;
     }
 
     public void setCommits(Commit[] commits) {

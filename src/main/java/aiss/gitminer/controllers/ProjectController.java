@@ -8,12 +8,7 @@ import aiss.gitminer.repositories.CommentRepository;
 import aiss.gitminer.repositories.CommitRepository;
 import aiss.gitminer.repositories.IssueRepository;
 import aiss.gitminer.repositories.ProjectRepository;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
-
-import javax.validation.Valid;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/projects")
