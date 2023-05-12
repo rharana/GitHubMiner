@@ -1,14 +1,9 @@
 package aiss.gitminer.repositories;
 
-import aiss.gitminer.model.Issue;
 import aiss.gitminer.model.Project;
 import org.springframework.http.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 
 @Repository
 public class ProjectRepository {
