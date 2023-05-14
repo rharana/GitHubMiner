@@ -1,5 +1,5 @@
 
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -27,5 +27,13 @@ public class Comment {
         this.id = id;
     }
 
-
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id='" + id + '\'' +
+                ", body='" + body + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                '}';
+    }
 }

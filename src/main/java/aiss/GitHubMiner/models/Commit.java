@@ -1,4 +1,4 @@
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -39,4 +39,19 @@ public class Commit {
         this.committedDate = inner.getCommittedDate();
     }
 
+    @Override
+    public String toString() {
+        return "Commit{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", message='" + message + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", authorEmail='" + authorEmail + '\'' +
+                ", authoredDate='" + authoredDate + '\'' +
+                ", committerName='" + committerName + '\'' +
+                ", committerEmail='" + committerEmail + '\'' +
+                ", committedDate='" + committedDate + '\'' +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
+    }
 }

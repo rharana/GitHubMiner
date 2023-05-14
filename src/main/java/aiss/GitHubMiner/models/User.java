@@ -1,5 +1,5 @@
 
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -24,4 +24,14 @@ public class User {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", avatarUrl='" + avatarUrl + '\'' +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
+    }
 }

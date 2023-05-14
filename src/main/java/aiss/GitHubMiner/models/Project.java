@@ -1,4 +1,4 @@
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -28,5 +28,14 @@ public class Project {
 
     public void setIssues(Issue[] issues) {
         this.issues = issues;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
     }
 }

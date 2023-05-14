@@ -1,10 +1,10 @@
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import javax.persistence.*;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 
 public class Issue {
@@ -65,5 +65,25 @@ public class Issue {
     }
     public Integer getRefId() {
         return refId;
+    }
+
+    @Override
+    public String toString() {
+        return "Issue{" +
+                "id='" + id + '\'' +
+                ", refId=" + refId +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", state='" + state + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                ", closedAt='" + closedAt + '\'' +
+                ", retLabels=" + Arrays.toString(retLabels) +
+                ", author=" + author +
+                ", assignee=" + assignee +
+                ", upvotes=" + upvotes +
+                ", downvotes=" + downvotes +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
     }
 }

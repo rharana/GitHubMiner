@@ -1,4 +1,4 @@
-package aiss.gitminer.model;
+package aiss.GitHubMiner.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -20,5 +20,14 @@ public class CommitUser {
 
     public String getDate() {
         return authoredDate;
+    }
+
+    @Override
+    public String toString() {
+        return "CommitUser{" +
+                "authorName='" + authorName + '\'' +
+                ", authorEmail='" + authorEmail + '\'' +
+                ", authoredDate='" + authoredDate + '\'' +
+                '}';
     }
 }
